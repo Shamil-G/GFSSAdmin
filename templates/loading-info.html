@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ res_value('LOAD_QUESTIONS') }}
+{% endblock %}
+
+{% block main_title %}
+<h1 class="title">{{ res_value('LOAD_QUESTIONS') }}</h1>
+{% endblock %}
+
+{% block body %}
+<div style="padding: 7px">
+    <h3 class="text-xl font-bold mb-2">Информация по загрузке вопросов:</h3>
+</div>
+    {% for loc_list in protocol %}
+    {% for el in loc_list %}
+        <div style="margin-left: 7px; margin-top: 5px">
+            <p>{{ el }}</p>
+        </div>
+    {% endfor %}
+    {% endfor %}
+{% endblock %}

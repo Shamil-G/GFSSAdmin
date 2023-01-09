@@ -1,0 +1,13 @@
+__init__.py.*
+__init__.pyc
+.idea/
+/venv/
+/upload_files/
+/reports/spool/
+*__pycache__/
+*.log
+/.vs
+/flask_session
+gfss_partameter.py
+
+/db_oracle/__init__.py

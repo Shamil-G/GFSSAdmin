@@ -1,0 +1,18 @@
+python3 -m venv venv
+PROJECT_DIR=/home/gfss/GFSSAdmin
+. $PROJECT_DIR/venv/bin/activate
+pip install --upgrade pip
+#pip install flask
+#pip install flask_login
+#pip install flask_session
+#pip install cx_Oracle
+#pip install xlsxwriter
+#pip install openpyxl
+#pip install flask_sqlalchemy
+#pip install uwsgi
+#pip install redis
+#pip install requests
+#pip install gunicorn
+#$PROJECT_DIR/venv/bin/gunicorn
+
+uwsgi --ini wsgi.ini

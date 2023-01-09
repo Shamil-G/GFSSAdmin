@@ -1,0 +1,2 @@
+find /home/pdd/PDD/live-photo -iname "*.*" -atime +30 -type f -delete
+find /home/pdd/PDD/static/photo -iname "*.*" -atime +30 -type f -delete

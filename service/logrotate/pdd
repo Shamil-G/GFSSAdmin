@@ -1,0 +1,66 @@
+/home/pdd/PDD/*.log {
+    daily
+    su pdd pdd
+    copytruncate
+    rotate 5
+    missingok
+    notifempty
+    compress
+    delaycompress
+    size 20M
+}
+/home/pdd/PDD/*.log {
+    daily
+    su pdd nginx
+    copytruncate
+    rotate 5
+    missingok
+    notifempty
+    compress
+    delaycompress
+    size 20M
+}
+/home/pdd/PDDAdmin/*.log {
+    su pdd pdd
+    daily
+    copytruncate
+    rotate 5
+    missingok
+    notifempty
+    compress
+    delaycompress
+    size 1M
+}
+/home/pdd/PDDOperator/*.log {
+    su pdd pdd
+    daily
+    copytruncate
+    rotate 5
+    missingok
+    notifempty
+    compress
+    delaycompress
+    size 5M
+}
+/home/pdd/PDDDelivery/*.log {
+    su pdd pdd
+    daily
+    copytruncate
+    rotate 5
+    missingok
+    notifempty
+    compress
+    delaycompress
+    size 5M
+}
+/home/pdd/PDDMonitor/*.log {
+    su pdd pdd
+    daily
+    copytruncate
+    rotate 5
+    missingok
+    notifempty
+    compress
+    delaycompress
+    size 1M
+}

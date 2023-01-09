@@ -1,0 +1,6 @@
+#systemctl get-default
+systemctl daemon-reload
+systemctl enable /home/pdd/PDDAdmin/service/pdd-admin.service
+systemctl stop pdd-admin
+systemctl start pdd-admin
+systemctl status -l pdd-admin
